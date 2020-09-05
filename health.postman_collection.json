@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "c7d5b4ca-92c2-46ae-a585-bbdd7fdcd7c9",
+		"name": "health",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"name\",\n    \"email_id\": \"abc@345.com\",\n    \"password\": \"password\",\n    \"phone\": \"77777\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/v1/register_user/",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"v1",
+						"register_user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register_device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imei\": \"1245232\",\n    \"device_type\": \"height\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/v1/register_device/",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"v1",
+						"register_device",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "map_user_device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imei\":\"1245232\", \"phone\": \"77777\", \"bought_at\": \"2019-09-05 11:26:12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/v1/map_user_device/",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"v1",
+						"map_user_device",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "record_attributes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imei\": \"1245232\",\n    \"phone\": \"77777\",\n    \"value\": 164\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/v1/record_attributes/",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"v1",
+						"record_attributes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
